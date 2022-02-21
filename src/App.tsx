@@ -6,7 +6,7 @@ function App() {
   const [hours, setHours] = useState();
   return (
     <div>
-      <h1>Super Converter</h1>
+      <h1>Super Converter test</h1>
       <label htmlFor="minutes">Minutes</label>
       <input value={minutes} id="minutes" placeholder="Minutes" type="number" onChange={ e => {
           setMinutes(Number(e.target.value));
