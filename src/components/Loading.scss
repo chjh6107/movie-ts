@@ -1,0 +1,17 @@
+.loadingWrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  animation: blink 1s ease-in-out infinite;
+  p {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
+@keyframes blink {
+  0%{color: white;}
+  100%{color: black;}
+}

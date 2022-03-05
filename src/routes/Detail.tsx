@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Loading from "../components/Loading";
 
 const Detail = () => {
   const { id } = useParams();
@@ -16,7 +17,7 @@ const Detail = () => {
     getMovie();
   }, []);
 
-  return <div>{loading ? <h1>Loading...</h1> : <div>Detail</div>}</div>;
+  return <div>{loading ? <Loading/> : <div>Detail</div>}</div>;
 };
 
 export default Detail;
